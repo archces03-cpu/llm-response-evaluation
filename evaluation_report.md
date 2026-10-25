@@ -1,46 +1,15 @@
-# LLM Response Evaluation Report
+## Key Evaluation Insight: Overall Scores Can Hide Critical Errors
 
-## 1. Project Overview
+The evaluation samples demonstrate why individual criteria should be reviewed alongside the overall score.
 
-This report analyzes five synthetic AI response examples using four criteria: accuracy, relevance, instruction-following, and clarity.
+In case E004, the response incorrectly identifies Mars as a planet closer to the Sun than Earth. Although the response is clear and follows the requested format, its factual accuracy score is 1 out of 5.
 
-The purpose is to demonstrate structured evaluation, error identification, and evidence-based feedback.
+The other criteria score 5 out of 5, producing an arithmetic mean of 4.0 out of 5.
 
-## 2. Key Findings
+This example highlights an important limitation of simple average scoring: a high overall score can conceal a serious factual error.
 
-### Factual Accuracy
+### Recommended Improvement
 
-Case E004 contains a factual error. The response incorrectly states that Mars is closer to the Sun than Earth. A correct alternative would be Mercury or Venus.
+For evaluations involving factual questions, reviewers should examine the accuracy score separately from the overall average. Where appropriate, the evaluation framework can flag critical factual errors for additional review rather than relying on the average score alone.
 
-### Instruction-following
-
-Case E005 asks for exactly three benefits of exercise, but the response provides only two. Although the answer is relevant, it does not fully satisfy the instruction.
-
-### Response Clarity
-
-A response can be clear and well written while still containing factual errors or failing to follow instructions. Evaluators should score each dimension independently.
-
-## 3. Recommended Improvements
-
-- Verify factual claims against reliable sources when necessary.
-- Check the response against every explicit instruction.
-- Use consistent rating criteria across examples.
-- Explain significant deductions with specific evidence.
-- Flag uncertainty rather than making unsupported assumptions.
-
-## 4. Quality Assurance Process
-
-1. Review the prompt and identify its requirements.
-2. Assess the response against the evaluation rubric.
-3. Record scores and written rationales.
-4. Check for factual errors and instruction violations.
-5. Review ratings for consistency before finalizing.
-
-## 5. Limitations
-
-This demonstration contains only five synthetic examples. It is not a representative benchmark and does not establish statistical reliability or measurable improvements in an AI model.
-
-## 6. Conclusion
-
-Structured evaluation helps distinguish factual accuracy, relevance, instruction-following, and clarity. Documenting errors and explaining ratings makes feedback more useful for AI training and quality assurance.
-
+This approach provides more informative feedback and helps distinguish responses that are well-written from responses that are factually reliable.
