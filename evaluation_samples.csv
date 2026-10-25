@@ -1,0 +1,6 @@
+case_id,prompt,ai_response,accuracy,relevance,instruction_following,clarity,overall_score,error_type,rationale
+E001,"What is the capital of Kenya?","Nairobi is the capital of Kenya.",5,5,5,5,5,None,"Correct and clear answer."
+E002,"Give exactly two renewable energy sources.","Solar and wind energy are renewable sources.",5,5,5,5,5,None,"Provides exactly two valid examples."
+E003,"Explain photosynthesis in one sentence.","Plants use sunlight to convert water and carbon dioxide into sugars and oxygen.",5,5,5,5,5,None,"Concise and broadly accurate explanation."
+E004,"Name one planet closer to the Sun than Earth.","Mars is closer to the Sun than Earth.",1,5,5,5,4,Factual error,"Mars is farther from the Sun than Earth; Mercury or Venus would be correct."
+E005,"List exactly three benefits of exercise.","Exercise supports cardiovascular health and can improve mood.",5,4,2,5,4,Instruction violation,"The answer gives two benefits rather than the requested three."
